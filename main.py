@@ -112,45 +112,10 @@ class Face_Recognition_System:
         self.root.destroy()  # Closes the main application window
 
         
-        
-        
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-        
-        
-        
 if __name__ == "__main__":
     root=Tk()
     obj = Face_Recognition_System(root)
     root.mainloop()
     
     
-    # img=Image.open(r"C:\Users\hp\Desktop\Face_Recognition_Proj\college_images\AABC.jfif")
-        # img=img.resize((500,230),Image.LANCZOS)
-        # self.photoimg=ImageTk.PhotoImage(img)
-        # f_lbl=Label(self.root,image=self.photoimg)
-        # f_lbl.place(x=0,y=0,width=500,height=150)
-        
-        # # second image 
-        # img2=Image.open(r"C:\Users\hp\Desktop\wallpaper\icons\india4.png")
-        # img2=img2.resize((500,230),Image.LANCZOS)
-        # self.photoimg2=ImageTk.PhotoImage(img2)
-        # f_lbl=Label(self.root,image=self.photoimg2)
-        # f_lbl.place(x=500,y=0,width=550,height=150)
-        
-        #  # second image 
-        # img3=Image.open(r"C:\Users\hp\Desktop\Face_Recognition_Proj\college_images\ABBC.jfif")
-        # img3=img3.resize((500,230),Image.LANCZOS)
-        # self.photoimg3=ImageTk.PhotoImage(img3)
-        # f_lbl=Label(self.root,image=self.photoimg3)
-        # f_lbl.place(x=1000,y=0,width=550,height=150)
-        
+    
