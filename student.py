@@ -543,7 +543,7 @@ class Student:
                     cv2.imshow("Capturing Face", my_frame)
 
                 # Stop after 300 images or when Enter key (13) is pressed
-                if cv2.waitKey(1) == 13 or img_id >= 200:
+                if cv2.waitKey(1) == 13 or img_id >= 300:
                     break
 
             cap.release()
@@ -553,109 +553,8 @@ class Student:
             messagebox.showinfo("RESULT", "Generating dataset completed!")
         
         except Exception as es:
-            messagebox.showerror("Error", f"Due To: {str(es)}", parent=self.root)          
-    # def generate_dataset(self):
-    #     if self.var_dep.get() == "Select Department" or self.var_std_name.get() == "" or self.var_std_id.get() == "":
-    #         messagebox.showerror("Error", "All Fields are required", parent=self.root)
-    #         return  # Exit the function if fields are missing
-
-    #     # Prepare values for the database
-    #     dep = self.var_dep.get()
-    #     course = self.var_course.get()
-    #     semester = self.var_semester.get()
-    #     name = self.var_std_name.get()
-    #     roll = self.var_roll.get() if self.var_roll.get() else None
-    #     div = self.var_div.get() 
-    #     gender = self.var_gender.get()
-    #     dob = self.var_dob.get()
-    #     email = self.var_email.get()
-    #     phone = self.var_phone.get() if self.var_phone.get() else None
-    #     address = self.var_address.get()
-    #     teacher = self.var_teacher.get()
-    #     photo_sample = self.var_radio1.get()
-    #     student_id = self.var_std_id.get()
-
-    #     # Log values for debugging
-    #     print(f"Values: {dep}, {course}, {semester}, {name}, {roll}, {div}, {gender}, {dob}, {email}, {phone}, {address}, {teacher}, {photo_sample}, {student_id}")
-
-    #     try:
-    #         # Database connection
-    #         conn = mysql.connector.connect(host="localhost", username="root", password="pass123", database="face_recognizer")
-    #         my_cursor = conn.cursor()
-
-    #         # Correct SQL update statement
-    #         my_cursor.execute("""
-    #             UPDATE student SET 
-    #                 `Dep` = %s,
-    #                 `Course` = %s,
-    #                 `Semester` = %s,
-    #                 `Name` = %s,
-    #                 `Roll` = %s,
-    #                 `Div` = %s,
-    #                 `Gender` = %s,
-    #                 `Dob` = %s,
-    #                 `Email` = %s,
-    #                 `Phone` = %s,
-    #                 `Address` = %s,
-    #                 `Teacher` = %s,
-    #                 `PhotoSample` = %s
-    #             WHERE `Student_id` = %s
-    #         """, (
-    #             dep,
-    #             course,
-    #             semester,
-    #             name,
-    #             roll,
-    #             div,
-    #             gender,
-    #             dob,
-    #             email,
-    #             phone,
-    #             address,
-    #             teacher,
-    #             photo_sample,
-    #             student_id  # Ensure this is the correct ID
-    #         ))
-
-    #         conn.commit()
-    #         self.fetch_data()
-    #         self.reset_data()
-    #         conn.close()
-            
-    #         face_classifier = cv2.CascadeClassifier(r"C:\Users\hp\Desktop\Face_Recognition_Proj\haarcascade_frontalface_default.xml")
-    #         if face_classifier.empty():
-    #             raise Exception("Could not load Haar cascade classifier.")
-
-    #         cap = cv2.VideoCapture(0)
-    #         img_id = 0
-
-    #         while True:
-    #             ret, my_frame = cap.read()
-    #             if not ret:
-    #                 break
-
-    #             # Convert frame to grayscale and detect faces
-    #             gray = cv2.cvtColor(my_frame, cv2.COLOR_BGR2GRAY)
-    #             faces = face_classifier.detectMultiScale(gray, 1.8, 5)
-
-    #             for (x, y, w, h) in faces:
-    #                 img_id += 1
-    #                 face = gray[y:y + h, x:x + w]
-    #                 face_resized = cv2.resize(face, (200, 200))  # Resize for consistency
-
-    #                 file_name_path = f"Data/user.{student_id}.{img_id}.jpg"
-    #                 cv2.imwrite(file_name_path, face_resized)
-    #                 cv2.putText(face_resized, str(img_id), (50, 50), cv2.FONT_HERSHEY_COMPLEX, 2, (0, 255, 0), 3)
-    #                 cv2.imshow("Cropped Face", face_resized)
-
-    #             if cv2.waitKey(1) == 13 or img_id == 150:  # Stop after 300 images
-    #                 break
-
-    #         cap.release()
-    #         cv2.destroyAllWindows()
-    #         messagebox.showinfo("RESULT", "Generating data sets completed!")
-    #     except Exception as es:
-    #         messagebox.showerror("Error", f"Due To: {str(es)}", parent=self.root)
+            messagebox.showerror("Error In Generating data ", f"Due To: {str(es)}", parent=self.root)          
+    
        
 if __name__ == "__main__":
     root=Tk()
