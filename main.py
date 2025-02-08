@@ -43,7 +43,7 @@ class Face_Recognition_System:
         b1_1=Button(bg_img,text="Face Detector",cursor="hand2",command=self.face_data,font =("times new roman",15,"bold"),bg="darkblue",fg="white")
         b1_1.place(x=500,y=280,width=220,height=40)
         
-        #Attendance Button 
+        #Attendance Button photo
         img6=Image.open(r"C:\Users\hp\Desktop\Face_Recognition_Proj\college_images\attendance4.jpg")
         img6=img6.resize((220,220),Image.LANCZOS)
         self.photoimg6=ImageTk.PhotoImage(img6) 
@@ -54,7 +54,7 @@ class Face_Recognition_System:
         b1_1=Button(bg_img,text="Attendance",cursor="hand2",command=self.attendance_data,font =("times new roman",15,"bold"),bg="darkblue",fg="white")
         b1_1.place(x=800,y=280,width=220,height=40)
         
-        #Train Face  Button 
+        #Train Face  Button photo
         img7=Image.open(r"C:\Users\hp\Desktop\Face_Recognition_Proj\college_images\train_faces2.jpg")
         img7=img7.resize((220,220),Image.LANCZOS)
         self.photoimg7=ImageTk.PhotoImage(img7) 
@@ -65,7 +65,7 @@ class Face_Recognition_System:
         b1_1=Button(bg_img,text="Train Faces ",cursor="hand2",command=self.train_data,font =("times new roman",15,"bold"),bg="darkblue",fg="white")
         b1_1.place(x=200,y=600,width=220,height=40)
         
-        #Photos Button 
+        #Photos Button photo
         img8=Image.open(r"C:\Users\hp\Desktop\Face_Recognition_Proj\college_images\phots .jpg")
         img8=img8.resize((220,220),Image.LANCZOS)
         self.photoimg8=ImageTk.PhotoImage(img8) 
@@ -76,7 +76,7 @@ class Face_Recognition_System:
         b1_1=Button(bg_img,text="Photos ",cursor="hand2",command=self.open_img,font =("times new roman",15,"bold"),bg="darkblue",fg="white")
         b1_1.place(x=500,y=600,width=220,height=40)
         
-        # exit  Button 
+        # exit  Button photo
         img9=Image.open(r"C:\Users\hp\Desktop\Face_Recognition_Proj\college_images\exit.jpg")
         img9=img9.resize((220,220),Image.LANCZOS)
         self.photoimg9=ImageTk.PhotoImage(img9) 
