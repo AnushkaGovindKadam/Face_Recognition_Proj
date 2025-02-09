@@ -76,7 +76,7 @@ class Attendence:
         attendenceId_entry.grid(row=0,column=1,padx=10,pady=5,sticky=W)
 
 
-        #roll
+        #roll no 
         rollLabel=Label(left_inside_frame,text="Roll No",font=("times in new roman",13,"bold"))
         rollLabel.grid(row=0,column=2,padx=4,pady=8,sticky=W)
 
@@ -105,7 +105,7 @@ class Attendence:
         atten_time=ttk.Entry(left_inside_frame,width=20,textvariable=self.var_atten_time,font=("times new roman",13,"bold"))
         atten_time.grid(row=2,column=1,pady=8)
 
-        #Date
+        #Date box 
         dateLabel=Label(left_inside_frame,text="Date",bg="white",font=("times in new roman",13,"bold"))
         dateLabel.grid(row=2,column=2)
 
@@ -127,20 +127,19 @@ class Attendence:
         btn_frame.place(x=0,y=200,width=715,height=35)
 
         save_btn=Button(btn_frame,text="Import csv",width=17,command=self.importCsv,font=("times in new roman",13,"bold"),bg="blue",fg="white")
-        save_btn.grid(row=0,column=0)
-
+        save_btn.grid(row=0,column=0) 
 
 # command=self.update_data
         update_btn=Button(btn_frame,text="Export csv",width=17,command=self.exportCsv,font=("times in new roman",13,"bold"),bg="blue",fg="white")
         update_btn.grid(row=0,column=1)
 
 
-# ,command=self.delete_data
+# command=self.delete_data
         delete_btn=Button(btn_frame,text="update",width=17,font=("times in new roman",13,"bold"),bg="blue",fg="white")
         delete_btn.grid(row=0,column=2)
 
 
-# ,command=self.reset_data
+# command=self.reset_data
         reset_btn=Button(btn_frame,text="Reset",width=17,command=self.reset_data,font=("times in new roman",13,"bold"),bg="blue",fg="white")
         reset_btn.grid(row=0,column=3)
 
@@ -250,7 +249,7 @@ class Attendence:
         self.var_atten_attendance.set(rows[6])
         
     def reset_data(self):
-        # rows=content['values']
+        # rows=content['values'] ............................................Syntax 
         self.var_atten_id.set("")
         self.var_atten_roll.set("")
         self.var_atten_name.set("")
