@@ -1,4 +1,4 @@
-#..............Importing imporrtant libraries 
+#..............Importing imporrtant libraries ...........
 
 from tkinter import*
 from tkinter import ttk
