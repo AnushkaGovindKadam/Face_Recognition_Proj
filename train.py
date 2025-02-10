@@ -1,3 +1,5 @@
+#..............Importing imporrtant libraries 
+
 from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
@@ -10,6 +12,8 @@ import cv2
 from tkinter import *
 from tkinter import messagebox
 from PIL import Image, ImageTk
+
+
 class Train:
     def __init__(self, root):
         self.root = root
@@ -35,7 +39,7 @@ class Train:
         b1_2 = Button(self.root, text="TRAIN DATA", command=self.train_classifier1, cursor="hand2",font=("times new roman", 35, "bold"), bg="blue", fg="black")
         b1_2.place(x=350, y=580, width=600, height=60)
 
-      
+      #..............training the model with photos ..........................
     def train_classifier(self):
         data_dir = "Data"
         path = [os.path.join(data_dir, file) for file in os.listdir(data_dir)]
