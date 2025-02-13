@@ -12,8 +12,7 @@ import cv2
 from tkinter import *
 from tkinter import messagebox
 from PIL import Image, ImageTk
-
-
+# actual code 
 class Train:
     def __init__(self, root):
         self.root = root
