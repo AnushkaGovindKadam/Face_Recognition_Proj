@@ -50,6 +50,7 @@ class Face_Recognition:
         current_hour = now.hour
         current_minute = now.minute
 
+        
         # Check for valid student data before proceeding
         if i == "Unknown" or r == "Unknown" or n == "Unknown" or d == "Unknown":
             print("Invalid student data. Attendance not recorded.")
