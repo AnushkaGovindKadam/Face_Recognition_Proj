@@ -30,7 +30,7 @@ class Student:
         self.var_teacher=StringVar()
         
         
-        #bg 
+        #bg image 
         img2=Image.open(r"C:\Users\hp\Desktop\Face_Recognition_Proj\college_images\Screenshot 2024-07-25 233948.png")
         img2=img2.resize((1530,790),Image.LANCZOS)
         self.photoimg2=ImageTk.PhotoImage(img2)
