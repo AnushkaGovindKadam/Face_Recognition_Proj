@@ -16,3 +16,9 @@ The system operates through a webcam or external camera connected to a computer,
 The system initially requires the registration of participants (students, employees, or members) by uploading images to the system. These images are then processed, and facial encodings are stored in the backend. During each subsequent session, the system scans the captured video frames, extracts facial encodings, and matches them against the stored encodings. If a match is found, the system records the person's name along with the timestamp of their attendance.
 
 The attendance records are saved in a CSV file, where each entry consists of the recognized individual’s name and the time of their attendance. The system is designed to efficiently handle large datasets and provides an easy-to-use interface for users.
+Challenges and Solutions:
+Face Accuracy: One of the main challenges in facial recognition systems is ensuring accurate identification, particularly in environments with poor lighting or obstructed faces. To tackle this, the system employs face encoding techniques that are resilient to variations in lighting and facial expression, and the use of multiple images for training each individual increases accuracy.
+
+Multiple Faces: In scenarios where multiple faces are detected, the system handles each face independently, ensuring that each individual is properly recognized without conflicts. This is achieved through careful processing of each face's location in the frame.
+
+Database Management: For large-scale systems, managing a large database of images and attendance records can be complex. The system optimizes storage by only saving facial encodings instead of raw image data, making it scalable and efficient in terms of both memory and processing.
