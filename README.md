@@ -18,7 +18,7 @@ The system initially requires the registration of participants (students, employ
 The attendance records are saved in a CSV file, where each entry consists of the recognized individual’s name and the time of their attendance. The system is designed to efficiently handle large datasets and provides an easy-to-use interface for users.
 
 
-Challenges and Solutions:
+Challenges and Solutions: *_*
 1] Face Accuracy: One of the main challenges in facial recognition systems is ensuring accurate identification, particularly in environments with poor lighting or obstructed faces. To tackle this, the system employs face encoding techniques that are resilient to variations in lighting and facial expression, and the use of multiple images for training each individual increases accuracy.
 
 2] Multiple Faces: In scenarios where multiple faces are detected, the system handles each face independently, ensuring that each individual is properly recognized without conflicts. This is achieved through careful processing of each face's location in the frame.
