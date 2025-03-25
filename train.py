@@ -1,5 +1,6 @@
 #..............Importing imporrtant libraries 
 
+
 from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
@@ -9,9 +10,6 @@ import os
 import numpy as np
 import cv2.face
 import cv2
-from tkinter import *
-from tkinter import messagebox
-from PIL import Image, ImageTk
 # actual code 
 class Train:
     def __init__(self, root):
