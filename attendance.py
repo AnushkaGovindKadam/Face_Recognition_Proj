@@ -1,5 +1,5 @@
 # importing important libraries 
-from email import message  #..........this feature is yet to add............. here the attendance marked message is directly send to email address
+from email import message  #..........this feature is yet to add............. here the attendance marked message is directly send to email address of that particlar person .
 from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
