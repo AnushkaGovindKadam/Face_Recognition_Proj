@@ -90,7 +90,9 @@ class Face_Recognition_System:
         
     def open_img(self):
         os.startfile("Data")
+        
         # ============================================function button ==============================
+    
     def student_details(self):
         self.new_window=Toplevel(self.root)
         self.app=Student(self.new_window)
@@ -101,7 +103,7 @@ class Face_Recognition_System:
         
     def face_data(self):
         self.new_window=Toplevel(self.root)
-        self.app=Face_Recognition(self.new_window)\
+        self.app=Face_Recognition(self.new_window)
                 
             
     def attendance_data(self):
