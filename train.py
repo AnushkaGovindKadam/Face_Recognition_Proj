@@ -1,4 +1,4 @@
-#..............Importing imporrtant libraries 
+# ---------------------Importing imporrtant libraries --------------------------------------------------------------------
 from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
@@ -8,7 +8,9 @@ import os
 import numpy as np
 import cv2.face
 import cv2
-# actual code 
+
+# ---------------------------------actual code--------------------------------------------------------------------- 
+
 class Train:
     def __init__(self, root):
         self.root = root
