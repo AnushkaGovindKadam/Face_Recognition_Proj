@@ -74,7 +74,7 @@ class Face_Recognition:
             print("Attendance marking is not available at this time.")
             return
 
-        # Check if student is already marked present today
+        # Check if student is already marked present today----------------------------------------------------------------------------------
         attendance_marked = False
         for attendance_file in ["morning.csv", "afternoon.csv", "evening.csv", "temp21_invalid.csv"]:
             if os.path.exists(attendance_file):
