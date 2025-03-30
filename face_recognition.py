@@ -1,10 +1,10 @@
+# -----------------------------------------------------importing libraries----------------------------------------------------------------
 import csv
 from tkinter import*
 from tkinter import ttk
 import pandas as pd
 from PIL import Image,ImageTk
 from tkinter import messagebox
-#from train import Train
 from time import strftime
 from datetime import datetime
 import mysql.connector
@@ -12,6 +12,9 @@ import cv2
 import os
 import dlib
 import numpy as np
+
+# ----------------------------------------------------------Actual code----------------------------------------------------------------------
+
 class Face_Recognition:
     def __init__(self, root):
         self.root = root
@@ -91,7 +94,7 @@ class Face_Recognition:
 
             return  # Exit if already marked present today
 
-        # Mark attendance in the corresponding file
+# --------------------------------------------Mark attendance in the corresponding file---------------------------------------------------
         with open(file_name, "a", newline="\n") as f:
             dl = now.strftime("%d/%m/%Y")
             dtString = now.strftime("%H:%M:%S")
