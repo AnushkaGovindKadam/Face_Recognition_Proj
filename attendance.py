@@ -1,9 +1,11 @@
-# importing important libraries 
+# importing important libraries ---------------------------------------......................................----------------------------------
+
 from email import message  #..........this feature is yet to add............. here the attendance marked message is directly send to email address of that particlar person .
 from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
 from tkinter import messagebox
+
 
 #from train import Train
 import csv
