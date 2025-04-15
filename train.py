@@ -3,7 +3,6 @@ from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
 from tkinter import messagebox
-#from train import Train
 import os
 import numpy as np
 import cv2.face
