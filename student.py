@@ -13,7 +13,7 @@ class Student:
         self.root.geometry("1530x790+0+0")
         self.root.title("Face Recognition System") 
         
-        # VARIABLE ==============
+        # VARIABLE .................------------------..........................----------------------............................-----------------
         self.var_dep=StringVar()
         self.var_course=StringVar()
         # self.var_year=StringVar()
