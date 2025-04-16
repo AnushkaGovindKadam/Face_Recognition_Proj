@@ -6,7 +6,7 @@ from tkinter import messagebox
 import mysql.connector
 import cv2
 
-
+# ................................................................................................................................................
 class Student:
     def __init__(self,root):
         self.root=root
